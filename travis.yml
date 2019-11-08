@@ -5,7 +5,8 @@ language: python
 python:
   - "3.6"
 
-
+before_install:
+  - gem install rake
 # command to install dependencies in the requirements file
 # You can also install the coverage here to avoid it being in the requirements file
 # It is important to avoid things like coverage, pep8 that are not required to run the app
@@ -21,4 +22,4 @@ script: true
   
  # Another command/method to run tests
 script: 
-  - python TestCalculator.py
+  - python Calculator.py
